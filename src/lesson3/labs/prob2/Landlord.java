@@ -3,7 +3,7 @@ package lesson3.labs.prob2;
 import java.util.List;
 
 public class Landlord{
-    List<Building> buildings;
+   private List<Building> buildings;
 
     public Landlord(List<Building> buildings){
         this.buildings = buildings;
