@@ -1,0 +1,12 @@
+folder hierarchy rule:
+mpp
+	resource
+		lab1
+		lab2
+		...
+	src
+		lesson1
+		lesson2
+		...
+
+please pull codes into src folder, pull other files into resource folder.
