@@ -29,10 +29,10 @@ public class Building{
         addApartment(new Apartment(floor));
     }
 
-    public double computeMonthlyProfit() {
+    public double computeMonthProfit() {
         double totalRent = 0.0;
         for (Apartment apartment : apartments) {
-            totalRent += apartment.conputeRent();
+            totalRent += apartment.conputeMonthRent();
         }
         return totalRent - cost;
     }

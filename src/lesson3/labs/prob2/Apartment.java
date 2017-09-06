@@ -7,7 +7,7 @@ public class Apartment{
         this.floor = floor;
     }
 
-    public double conputeRent(){
+    public double conputeMonthRent(){
         return 300 * floor;
     }
 }

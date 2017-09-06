@@ -13,10 +13,10 @@ public class Landlord{
         this.buildings.add(building);
     }
 
-    public double computeMonthlyProfit(){
+    public double computeMonthProfit(){
         double totalRent = 0.0;
         for (Building building : buildings) {
-            totalRent += building.computeMonthlyProfit();
+            totalRent += building.computeMonthProfit();
         }
         return totalRent;
     }
