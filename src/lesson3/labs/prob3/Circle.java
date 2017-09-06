@@ -1,4 +1,4 @@
-package prob3;
+package lesson3.labs.prob3;
 
 public class Circle {
 	private double radius;
