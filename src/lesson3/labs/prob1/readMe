@@ -1,0 +1,19 @@
+run the main function in the PersonWithJob class, we get the result below:
+
+                p1.equals(p2)? false
+                p2.equals(p1)? true
+
+reason:
+    p1 is the instance of PersonWithJob which is the subclass of Person, and override the equals method.
+    p2 is the instance of Person class.
+
+    when execute the code "p1.equals(p2)", the equals method in the PersonWithJob class is executed.
+    because p2 is not the instance of PersonWithJob, the result is false;
+
+    when execute the code "p2.equals(p1)", the equals method in the Person class is executed.
+    because Person is the parent of PersonWithJob, and the names are same, the result is true;
+
+
+
+composition solution:
+    The PersonWithJobComposition class is the composition solution.
