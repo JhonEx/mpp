@@ -9,5 +9,4 @@ public class Circle {
 	public double computeArea() {
 		return Math.PI*this.radius*this.radius;
 	}
-
 }

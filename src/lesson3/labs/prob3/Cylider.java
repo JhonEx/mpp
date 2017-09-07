@@ -8,13 +8,9 @@ public class Cylider {
 	   return circle.computeArea()*this.height;
    }
 
-public Cylider(double height, Circle circle) {
-	
-	this.height = height;
-	this.circle = circle;
-}
-   
- 
-  
-   
+	public Cylider(double height, Circle circle) {
+		
+		this.height = height;
+		this.circle = circle;
+	}   
 }

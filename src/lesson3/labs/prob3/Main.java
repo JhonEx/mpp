@@ -7,10 +7,7 @@ public class Main {
 	    	Circle c=new Circle(3);
 	    	Cylider cy=new Cylider(4,c);
 	    	
-	    	System.out.println(cy.computeVolume());
-	    	
-	    			
-	   
+	    	System.out.println(cy.computeVolume());	 
 	    }
 
 }
