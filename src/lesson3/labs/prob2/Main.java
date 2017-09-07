@@ -27,6 +27,6 @@ public class Main{
 
         Landlord landlord = new Landlord(buildings);
 
-        System.out.println("landlord monthly profit: " + landlord.computeMonthlyProfit());
+        System.out.println("landlord monthly profit: " + landlord.computeMonthProfit());
     }
 }
