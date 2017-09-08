@@ -1,4 +1,4 @@
-package lesson4.labs.prob3.domain;
+package lesson4.labs.prob3C.domain;
 
 public class EmployeeFactory {
 

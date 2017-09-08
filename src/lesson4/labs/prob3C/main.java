@@ -1,6 +1,6 @@
-package lesson4.labs.prob3;
+package lesson4.labs.prob3C;
 
-import lesson4.labs.prob3.domain.HRDepartment;
+import lesson4.labs.prob3C.domain.HRDepartment;
 
 public class main {
 
