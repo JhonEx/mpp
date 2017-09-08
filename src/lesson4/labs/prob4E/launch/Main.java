@@ -1,36 +1,53 @@
 package lesson4.labs.prob4E.launch;
 
-/** This class tests the code package */
+import java.util.ArrayList;
+import java.util.List;
+
+import lesson4.labs.prob4E.Account;
+import lesson4.labs.prob4E.Admin;
+import lesson4.labs.prob4E.CheckingAccount;
+import lesson4.labs.prob4E.Employee;
+import lesson4.labs.prob4E.SavingsAccount;
+
 public class Main {
-    /* Uncomment when you are ready to test your code
-	public static void main(String[] args) {
-		Account[] someCheckingAccounts = new CheckingAccount[2];
-		someCheckingAccounts[0] = new CheckingAccount("231-471", 25.00, 100);
-		someCheckingAccounts[1] = new CheckingAccount("446-973", 25.00, 200);
-		Account[] someSavingsAccounts = new SavingsAccount[3];
-		someSavingsAccounts[0] = new SavingsAccount("44-8123", 0.03, 200);
-		someSavingsAccounts[1] = new SavingsAccount("21-9672", 0.03, 200);
-		someSavingsAccounts[2] = new SavingsAccount("68-0902", 0.04, 600);
-		
-		
-		Employee e1 = new Employee("Joe");
-		Employee e2 = new Employee("Ralph");
-		Employee e3 = new Employee("Tom");
-		
-			e1.addAccount(someCheckingAccounts[0]);
-			e1.addAccount(someSavingsAccounts[0]);
-			e2.addAccount(someCheckingAccounts[1]);
-			e2.addAccount(someSavingsAccounts[1]);
-			e3.addAccount(someSavingsAccounts[2]);
-		
-		List<Employee> employees = new ArrayList<>();
-		employees.add(e1);
-		employees.add(e2);
-		employees.add(e3);
-		
-		System.out.println(Admin.computeUpdatedBalanceSum(employees));
-		
-		
+	
+    public static void main(String[] args) {
+    	
+     Account a=new CheckingAccount(1000, 1, "1");
+     Account b=new SavingsAccount(1000, 0.1, "1");
+     List<Account> accounts=new ArrayList<>();
+     accounts.add(a);
+     accounts.add(b);
+     Employee c=new Employee("1");
+     Employee c1=new Employee("1");
+     Employee c2=new Employee("1");
+     Employee c3=new Employee("1");
+     c.addAccount(a);
+     c.addAccount(b);
+     c1.addAccount(a);
+     c1.addAccount(b);
+     c2.addAccount(a);
+     c2.addAccount(b);
+     c3.addAccount(a);
+     c3.addAccount(b);
+    
+     
+     List<Employee> list=new ArrayList<>();
+     list.add(c);
+     list.add(c1);
+     list.add(c2);
+     list.add(c3);
+     
+     
+     
+    
+     
+     Admin d=new Admin();
+     double sum= d.computeUpdatedBalanceSum(list);
+     System.out.println(sum);
+     
+     
+     
+    
 	}
-     */
 }
