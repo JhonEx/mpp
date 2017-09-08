@@ -5,29 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Employee {
-/**	private String _name;
-	private List<Account> _accounts = new ArrayList<Account>();
-	
-	public Employee(String name) {
-		_name = name;
-	}
-	
-	public List<Account> getAccounts() {
-		return _accounts;
-	}
 
-	public void addAccount(Account account) {
-		_accounts.add(account);
-	}
-
-	public double computeUpdatedBalanceSum() {
-		double updatedBalanceSum = 0;
-		for(Account acc : _accounts) {
-			updatedBalanceSum += acc.getUpdateBalance();
-		}
-		return updatedBalanceSum;
-	}
-	**/
 	private String name;
     private  List<Account> listaccount=new ArrayList<Account>();
    
