@@ -1,5 +1,9 @@
 package lesson5.labs.prob1.gui;
 
+import lesson5.labs.prob1.rulesets.RuleException;
+import lesson5.labs.prob1.rulesets.RuleSet;
+import lesson5.labs.prob1.rulesets.RuleSetFactory;
+
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.FlowLayout;
@@ -116,7 +120,17 @@ public class BookWindow extends JFrame {
 	}
 	class ButtonListener implements ActionListener {
 		public void actionPerformed(ActionEvent evt){
-			JOptionPane.showMessageDialog(BookWindow.this, "Still need to check book rules!");
+			RuleSet ruleSet = RuleSetFactory.getRuleSet(BookWindow.this);
+			try {
+				ruleSet.applyRules(BookWindow.this);
+			} catch (RuleException e) {
+				e.printStackTrace();
+				JOptionPane.showMessageDialog(BookWindow.this,
+						"Error: "+e.getMessage(),
+						"Error",
+						JOptionPane.ERROR_MESSAGE);
+			}
+//			JOptionPane.showMessageDialog(BookWindow.this, "Still need to check book rules!");
 		}
 	}
 	class BackListener implements ActionListener {
