@@ -1,6 +1,6 @@
 package lesson4.labs.prob3.domain;
 
-public final class Paycheck {
+final class Paycheck {
 
 	private double grossPay;
 	private double fica;

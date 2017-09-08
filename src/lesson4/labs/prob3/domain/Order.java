@@ -1,6 +1,6 @@
 package lesson4.labs.prob3.domain;
 
-public class Order {
+class Order {
 
 	private int orderNo;
 	private String orderDate;

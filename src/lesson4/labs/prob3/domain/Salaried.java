@@ -1,6 +1,6 @@
 package lesson4.labs.prob3.domain;
 
-public class Salaried extends Employee{
+class Salaried extends Employee{
 
 	private int salary;
 	

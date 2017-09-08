@@ -3,7 +3,7 @@ package lesson4.labs.prob3.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Commissioned extends Employee{
+class Commissioned extends Employee{
 
 	private int baseSalary;
 	private double commission;

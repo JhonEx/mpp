@@ -1,6 +1,6 @@
 package lesson4.labs.prob3.domain;
 
-public abstract class Employee {
+abstract class Employee {
 
 	int empId;
 	

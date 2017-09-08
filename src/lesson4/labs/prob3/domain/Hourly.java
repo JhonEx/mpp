@@ -1,6 +1,6 @@
 package lesson4.labs.prob3.domain;
 
-public class Hourly extends Employee{
+class Hourly extends Employee{
 
 	private int hourlyWage;
 	private int hoursPerWeek;
