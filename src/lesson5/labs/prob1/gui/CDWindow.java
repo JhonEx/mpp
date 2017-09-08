@@ -1,5 +1,9 @@
 package lesson5.labs.prob1.gui;
 
+import lesson5.labs.prob1.rulesets.RuleException;
+import lesson5.labs.prob1.rulesets.RuleSet;
+import lesson5.labs.prob1.rulesets.RuleSetFactory;
+
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.FlowLayout;
@@ -115,7 +119,17 @@ public class CDWindow extends JFrame {
 	}
 	class ButtonListener implements ActionListener {
 		public void actionPerformed(ActionEvent evt){
-			JOptionPane.showMessageDialog(CDWindow.this, "Still need to check CD rules!");
+			RuleSet ruleSet = RuleSetFactory.getRuleSet(CDWindow.this);
+			try {
+				ruleSet.applyRules(CDWindow.this);
+			} catch (RuleException e) {
+				e.printStackTrace();
+				JOptionPane.showMessageDialog(CDWindow.this,
+						"Error: "+e.getMessage(),
+						"Error",
+						JOptionPane.ERROR_MESSAGE);
+			}
+//			JOptionPane.showMessageDialog(CDWindow.this, "Still need to check CD rules!");
 		}
 	}
 	class BackListener implements ActionListener {
