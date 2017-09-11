@@ -1,0 +1,10 @@
+.button {
+	-fx-pref-width:200px;
+}
+#leftbox{
+	-fx-spacing:10px;
+}
+#rightbox{
+	-fx-alignment:center-left;
+	-fx-spacing:0px;
+}
