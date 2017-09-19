@@ -1,0 +1,4 @@
+When type D is a class and implements both interface C and B, class D must provide implementation of method () 
+so that the next inheritance chain will have to override the method.
+
+When type D is an interface and extends both interface C and B, interface D should provide a default implementation of method ()
