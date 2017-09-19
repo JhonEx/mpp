@@ -14,9 +14,6 @@ public class ForEachExample {
 		
 		//print each element of the list in upper case format
 		list.forEach(new UpperCaseConsumer());
-		
-		
-		
 	}
 	
 	//implement a Consumer
