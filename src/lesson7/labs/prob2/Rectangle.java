@@ -9,14 +9,13 @@ public final class Rectangle implements Polygon {//ClosedCurve,
 		return new double[]{width,width,length,length};
 	}
 
-	@Override
-	public double computePerimeter() {
+//	@Override
+//	public double computePerimeter() {
 //		double area =  width * length;
 //		return area;
-		return computePolygonPerimeter();
 
 //		return 2 * length + 2 * width;
-	}
+//	}
 	public Rectangle(double width, double length) {	
 		this.width = width;
 		this.length = length;

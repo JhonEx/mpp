@@ -12,11 +12,6 @@ public class EquilateralTriangle implements Polygon{
     }
 
     @Override
-    public double computePerimeter() {
-        return computePolygonPerimeter();
-    }
-
-    @Override
     public double[] getSides() {
         return new double[]{side,side,side};
     }

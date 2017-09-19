@@ -2,7 +2,7 @@ package lesson7.labs.prob2;
 
 public interface Polygon extends ClosedCurve{
     double[] getSides();
-    default double computePolygonPerimeter(){
+    default double computePerimeter(){
         double perimeter = 0;
         for(double d:getSides()){
             perimeter += d;
