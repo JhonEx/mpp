@@ -1,0 +1,2 @@
+The override method  of equals() and hashCode()  is correct，
+but it violate  the class on which object is based should be immutable‘s principle 
