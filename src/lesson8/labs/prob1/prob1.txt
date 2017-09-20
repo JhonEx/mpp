@@ -1,0 +1,59 @@
+Sub prob1
+	1. declarative codes are self-documenting, while imperative codes are full of details.
+	2. declarative codes are referential transparency. That means two calls to the same method are guaranteed to return the same result.
+
+
+Sub prob2
+	The declarative programming means to write methods just by declaring what is needed, without specifying the details of how to achieve the goal.
+	Example:
+	public void printList(List<String> input){
+		System.out.println(input.stream().filter(val -> val.startsWith("a")).map(val -> val.toUpperCase()).collect(Collectors.toList()));
+	}
+
+Sub prob3
+	1 Functional interface is a interface which has exactly one method.
+	2 A implementation of a functional interface is called a functor.
+	3 A closure is a functor embedded inside another class.
+	
+	Example:
+	1 A functional interface:
+	public interface Plus {
+		public int plus(int x, int y);
+	}
+	
+	2 A functor:
+	public class PlusFunctor implements Plus{
+		@Override
+		public int plus(int x, int y) {
+			return x + y;
+		}
+	}
+	
+	3 A closure:
+	See package lesson8.labs.prob1.subProb3_closureDemo
+
+Sub prob4
+	1 programs are more compact, easier to write, and easier to read/understand.
+	2 programs are thread-safe.
+	3 easier to demonstrate correctnesss of functional programs.
+	
+Sub prob5
+	See church lambda.png
+	
+Sub prob6
+	1 free variables: s, t
+	2 parameters: u, v. free variables: a, b.
+	3 parameters: s, t. free variables: ignoreCase
+	
+Sub prob7
+	See package lesson8.labs.prob1.subProb7_thisShortcut
+	
+Sub prob8
+	1 (val) -> System.out.println(val)
+	2 this is a object::instanceMethod method.
+	
+Sub prob9
+	1 () -> Math.random()
+	2 See package lesson8.labs.prob1.subPro9_supplier
+	
+
