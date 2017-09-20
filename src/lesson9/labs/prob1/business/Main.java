@@ -1,6 +1,8 @@
 package lesson9.labs.prob1.business;
 
 import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import lesson9.labs.prob1.dataaccess.DataAccess;
 import lesson9.labs.prob1.dataaccess.DataAccessFacade;
@@ -21,8 +23,9 @@ public class Main {
 		Collection<LibraryMember> members = da.readMemberMap().values();
 		List<LibraryMember> mems = new ArrayList<>();
 		mems.addAll(members);
-		//implement
-		return null;
+		List<String> result=mems.stream().filter(w->w.getAddress().getZip().contains("3")).map(w->w.getMemberId()).collect(Collectors.toList());
+		
+		return result;
 		
 	}
 	//Returns a list of all isbns of books having at least two copies
@@ -31,8 +34,8 @@ public class Main {
 			Collection<Book> books = da.readBooksMap().values();
 			List<Book> bs = new ArrayList<>();
 			bs.addAll(books);
-			//implement
-			return null;
+			List<String> result=bs.stream().filter(w->w.getNumCopies()>=2).map(w->w.getIsbn()).collect(Collectors.toList());
+			return result;
 			
 		}
 	
@@ -42,8 +45,8 @@ public class Main {
 		Collection<Book> books = da.readBooksMap().values();
 		List<Book> bs = new ArrayList<>();
 		bs.addAll(books);
-		//implement
-		return null;
+		List<String> result=bs.stream().filter(w->w.getAuthors().size()>1).map(w->w.getIsbn()).collect(Collectors.toList());
+		return result;
 		
 		}
 
