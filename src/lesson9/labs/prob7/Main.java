@@ -64,7 +64,19 @@ public class Main {
 	//Using this ordering, this method sorts the list as part of 
 	//a stream pipeline, and prints to the console
 	public static void ordering2(List<String> words) {
-		System.out.println(/* implement */);
+		System.out.println(/* implement */
+		words.stream().sorted(
+		        Comparator.comparing(s -> {
+		            StringBuilder sb = new StringBuilder();
+
+                    for(int i=s.length()-1; i>=0; i--){
+                        sb.append(s.charAt(i));
+                    }
+
+                    return sb.toString();
+                })
+        ).collect(Collectors.toList())
+		);
 				
 	}
 
