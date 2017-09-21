@@ -8,7 +8,7 @@ public class PrimeStream{
         primes.limit(20).forEach(prime -> System.out.print(prime+"\t"));
     }
 
-  public final static Stream<Integer> primes = Stream.iterate(1, n -> {
+  public final static Stream<Integer> primes = Stream.iterate(2, n -> {
         int tmp = n + 1;
 
         while(!isPrime(tmp)){
