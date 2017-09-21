@@ -18,7 +18,7 @@ public class Main {
 	}
 	//Uses flatMap to write to console a list of all order items
 	private void showAllOrderItems() {
-		System.out.println(orders.stream().map(order -> order.getOrderItems().stream()).flatMap(order -> order).collect(Collectors.toList()));
+		System.out.println(orders.stream().map(w -> w.getOrderItems().stream()).flatMap(w -> w).collect(Collectors.toList()));
 	}
 	
 	
