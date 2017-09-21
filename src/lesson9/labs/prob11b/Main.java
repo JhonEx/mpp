@@ -17,6 +17,6 @@ public class Main {
 		                  new Employee("Donald", "Trump", 100000));
 		
 		
+		System.out.println(LambdaLibrary.NAMES_IN.apply(list, 100000, 'M'));
 	}
-
 }

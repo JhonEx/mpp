@@ -2,8 +2,6 @@ package lesson9.labs.prob11a;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 
 public class Main {
 
@@ -21,10 +19,14 @@ public class Main {
 		  System.out.println(/*implement */);
 				               
 		  
-
+		  System.out.println(
+					  emps.stream().
+			  filter((e) -> e.salary > 100000).
+			  filter((e) -> e.getLastName().toUpperCase().charAt(0) > 77).
+			  sorted((e1, e2) -> e1.getFirstName().compareTo(e2.getFirstName())).
+			  map((e) -> e.firstName + " " + e.lastName).
+			  
+			  collect(Collectors.joining(", "))
+		  );
 	}
-	
-	
-	
-
 }

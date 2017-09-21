@@ -1,0 +1,2 @@
+1. This code will cause endless loop.
+2. A quick approach is to limit the count of generated integers.

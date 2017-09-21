@@ -1,8 +1,6 @@
 package lesson9.labs.prob7;
 
 import java.util.*;
-import java.util.function.*;
-import java.util.stream.Collectors;
 
 public class Main {
 
@@ -22,7 +20,6 @@ public class Main {
 	//a stream pipeline, and prints to the console
 	public static void ordering1(List<Integer> list) {
 		System.out.println(/* implement */);
-		
 	}
 	
 	//Orders words by first reversing each and comparing 
