@@ -19,9 +19,6 @@ public class Main {
 	//Using this ordering, this method sorts the list as part of 
 	//a stream pipeline, and prints to the console
 	public static void ordering1(List<Integer> list) {
-<<<<<<< HEAD
-		System.out.println(/* implement */);
-=======
 		System.out.println(/* implement */
 		list.stream().sorted(
 		        Comparator.comparing(it -> Math.abs((int)it)).thenComparing((c1,c2)->{
@@ -52,9 +49,6 @@ public class Main {
 //			}
 //		}).collect(Collectors.toList())
         );
-
-
->>>>>>> branch 'master' of https://github.com/jerrzy/mpp
 	}
 	
 	//Orders words by first reversing each and comparing 
