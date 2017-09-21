@@ -23,7 +23,15 @@ public class Main {
 	public static void ordering1(List<Integer> list) {
 		System.out.println(/* implement */
 		list.stream().sorted(
-		        Comparator.comparing(it -> Math.abs((Integer)it))
+		        Comparator.comparing(it -> Math.abs((int)it)).thenComparing((c1,c2)->{
+		            if((int)c1 < 0){
+		                return -1;
+                    }else if((int)c2 < 0){
+                        return 1;
+                    }else{
+                        return 0;
+                    }
+                })
         ).collect(Collectors.toList())
 //		list.stream().sorted((i,j) -> {
 //			int tmpI = i<0? -i:i;
