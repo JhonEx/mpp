@@ -21,8 +21,30 @@ public class Main {
 	//Using this ordering, this method sorts the list as part of 
 	//a stream pipeline, and prints to the console
 	public static void ordering1(List<Integer> list) {
-		System.out.println(/* implement */);
-		
+		System.out.println(/* implement */
+		list.stream().sorted(
+		        Comparator.comparing(it -> Math.abs((Integer)it))
+        ).collect(Collectors.toList())
+//		list.stream().sorted((i,j) -> {
+//			int tmpI = i<0? -i:i;
+//			int tmpJ = j<0? -j:j;
+//
+//			int diff = tmpI - tmpJ;
+//			if(diff == 0){
+//				if(i<0){
+//				    return -1;
+//                }else if(j<0){
+//                    return 1;
+//                }else {
+//                    return 0;
+//                }
+//			}else{
+//				return diff;
+//			}
+//		}).collect(Collectors.toList())
+        );
+
+
 	}
 	
 	//Orders words by first reversing each and comparing 
