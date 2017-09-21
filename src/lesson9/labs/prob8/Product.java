@@ -1,5 +1,7 @@
 package lesson9.labs.prob8;
 
+import java.util.Optional;
+
 public class Product {
 	private String productId;
 	private String productName;
@@ -12,9 +14,14 @@ public class Product {
 	public String getProductId() {
 		return productId;
 	}
-	public String getProductName() {
-		return productName;
+	public Optional<String> getProductName() {
+		return Optional.ofNullable(productName);
 	}
+
+//	public String getProductName() {
+//		return productName;
+//	}
+
 	public double getUnitPrice() {
 		return unitPrice;
 	}

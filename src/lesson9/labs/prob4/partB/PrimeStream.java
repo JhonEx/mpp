@@ -11,7 +11,7 @@ public class PrimeStream{
         ps.printFirstNPrimes(5);
     }
 
-    private final Supplier<Stream<Integer>> primeStreamSupplier = () -> Stream.iterate(1, n -> {
+    private final Supplier<Stream<Integer>> primeStreamSupplier = () -> Stream.iterate(2, n -> {
         int tmp = n + 1;
 
         while(!isPrime(tmp)){
