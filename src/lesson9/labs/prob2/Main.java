@@ -1,8 +1,13 @@
 package lesson9.labs.prob2;
 import java.time.LocalDate;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 public class Main {
+	private static final Object[] OrderItem = null;
 	List<Order> orders;
 	public static void main(String[] args) {
 		Main m = new Main();
@@ -13,9 +18,9 @@ public class Main {
 	}
 	//Uses flatMap to write to console a list of all order items
 	private void showAllOrderItems() {
-		System.out.println("\n==============\nAll order items:");
-		//implement
+		System.out.println(orders.stream().map(w -> w.getOrderItems().stream()).flatMap(w -> w).collect(Collectors.toList()));
 	}
+	
 	
 	private void displayAllOrders() {
 		System.out.println(orders);;
