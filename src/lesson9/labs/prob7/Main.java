@@ -1,6 +1,7 @@
 package lesson9.labs.prob7;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
 
