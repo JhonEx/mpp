@@ -2,7 +2,7 @@ package lesson9.labs.prob13;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//
 @SuppressWarnings("unused")
 public class Book {
 	private List<BookCopy> copies = new ArrayList<BookCopy>();
