@@ -25,7 +25,8 @@ public class Book {
 	
 	 public boolean isAvailable() {
 	        return getCopies().stream()
-	            .map(BookCopy::isAvailable)
-	            .reduce((x,y) -> x||y).get().booleanValue();
+	            .map(x->x.isAvailable())
+	            .reduce(false, (x,y)->x||y);
 		}
+	 //
 }
