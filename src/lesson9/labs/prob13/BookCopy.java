@@ -11,9 +11,13 @@ public class BookCopy {
 		this.isAvailable = isAvailable;
 	}
 	public boolean isAvailable() {
+		
 		return isAvailable;
 	}
 	public void changeAvailability() {
 		isAvailable = !isAvailable;
 	}
+	public int getCopyNum() {
+        return copyNum;
+    }
 }

@@ -22,4 +22,11 @@ public class Book {
 		BookCopy copy = new BookCopy(this, copies.size() + 1, true);
 		copies.add(copy);
 	}
+	
+	 public boolean isAvailable() {
+	        return getCopies().stream()
+	            .map(BookCopy::getCopyNum)
+	            .reduce((x,y) -> x+y)
+	            .get() > 0;
+		}
 }
