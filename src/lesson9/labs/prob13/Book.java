@@ -28,4 +28,5 @@ public class Book {
 	            .map(x->x.isAvailable())
 	            .reduce(false, (x,y)->x||y);
 		}
+	 //
 }
