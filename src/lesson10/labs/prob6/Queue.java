@@ -22,4 +22,5 @@ public class Queue {
 		head = n.next;
 		return n.value;
 	}
+
 }

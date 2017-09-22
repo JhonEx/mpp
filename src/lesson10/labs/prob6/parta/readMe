@@ -1,0 +1,11 @@
+to test whether Queue is thradesafe, I modified the Queue class.
+        add a new private Integer variable count,
+        and in the Queue's add method, make the count plus 1 and force the thread sleep 1 second,
+         when the 'head ==null' statement is true.
+
+if the Queue is thradesafe, the value of count must be 1, because the variable head is assigned to a none null value by the first thread,
+the second thread, or the third thread, or the following thread will not execute the if statement, and will go the else part directly.
+
+the test set up three threads, but the output is not 1.
+
+so the Queue class is not threadsafe.
