@@ -1,0 +1,7 @@
+a:
+ Compiler error emerges on here: nums.add(3.14);
+Because with the extends wildcard, values can be gotten but not inserted.
+
+b：
+Compiler error emerges on here: double dbl = sum(ints);. 
+Because the parameter type of sum() method is Collection<? extends Number> not Collection<? super Integer>.
