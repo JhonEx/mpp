@@ -2,6 +2,8 @@ package lesson10.labs.prob4;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class GuestListJava8 {
 	 
@@ -29,7 +31,13 @@ public class GuestListJava8 {
 	}
 	
 	public void printListOfExpectedFemaleGuests(List<Guest> invited) {
-		//implement
+		List<String> list=invited.stream()
+				          .filter(PredicateWithException.unchecked(t->checkLegal(t)))
+				          .filter(t->t.getGender()==Gender.F)
+				          .filter(t->t.isPlanningToCome())
+				          .map(t->t.getName())
+				          .collect(Collectors.toList());
+
 	}
 	
 	
