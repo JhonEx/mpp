@@ -9,9 +9,9 @@ public class FixThis {
 //	List<String> processList(List<String> list)  {
 //
 //	    return list.stream()
-//	    		   .map(x -> doNothingIfShort(x)) // This will fail to compile 
+//	    		   .map(x -> doNothingIfShort(x)) // This will fail to compile
 //	               .collect(Collectors.toList());
-//	 
+//
 //	}
 	
 	 
