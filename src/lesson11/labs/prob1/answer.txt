@@ -1,0 +1,18 @@
+List<Integer> ints = new ArrayList<>();
+ints.add(1);
+ints.add(2);
+List<Number> nums = ints;
+nums.add(3.14);
+
+Error occurs at line 4, cause generic subtyping is not covariant.
+
+
+
+
+List<Integer> ints = ArrayList<>();
+ints.add(1);
+ints.add(2);
+List<? extends Number> nums = ints;
+nums.add(3.14);
+
+Error occurs at line 5, cause it's not allowed to add elements in the ? extends bounded wildcard.
